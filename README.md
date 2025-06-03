@@ -80,4 +80,4 @@ MATLAB-based optimization framework for residential solar panel configurations u
 - Mobile app interface
 - Hybrid algorithms
 
-*Developed by: Ahmed Mady, Mohammed Nada, Amro Abdellatif, Mostafa Kashaf, Marwan Sallam*
+*Developed by: Ahmed Mady, Mohammed Magdy, Amro Abdellatif, Mostafa Kashaf, Marwan Sallam t the German University in Cairo (GUC).*
