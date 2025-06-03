@@ -16,7 +16,14 @@ MATLAB-based optimization framework for residential solar panel configurations u
 | Multi-Verse (MVO)| Population | 4 min   | 18.74   | Best balance      |
 | Simulated Annealing | Trajectory | 10 min | 18.74   | Reliable baseline |
 
-## Key Constraints
+
+## Mathematical Model
+### Objective Function
+-
+  ```math
+    \min \left( \text{Cost} + \frac{A_0 - \sum(n_i \times A_i)}{A_0} + \sum\frac{(T_r-5)\times M_T}{m} - 0.9\times\sum(\text{Power}_i\times n_i) \right)
+        
+### Key Constraints
 - **Power loss** ≤ 15%
 - **Wasted area** ≤ 10%
 - **Max 5 panel types**
