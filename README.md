@@ -41,15 +41,13 @@ MATLAB-based optimization framework for residential solar panel configurations u
   - Temperature coefficients
 
 ### Optimization Process
-1. Initialize population/solution
-2. Evaluate against constraints
-3. Apply algorithm-specific operators:
-   - GA: Crossover and mutation
-   - GWO: Alpha/beta/delta hierarchy
-   - MVO: White/black hole cosmology
-   - SA: Geometric cooling
-4. Check convergence
-5. Output best solution
+- ```mermaid
+    graph LR
+      A[Generate Initial Solutions] --> B[Evaluate Constraints]
+      B --> C[Apply Algorithm Operators]
+      C --> D[Check Convergence]
+      D -->|No| C
+      D -->|Yes| E[Output Best Results]
 
 ## System Architecture
 - 
@@ -68,6 +66,16 @@ MATLAB-based optimization framework for residential solar panel configurations u
   - <10% area waste
   - <15% power loss
   - ≤5 panel types limit
+ 
+## Computational Efficiency
+- 
+    ```mermaid
+         pie
+    title Algorithm Runtime Distribution
+    "Genetic Algorithm" : 7.5
+    "Grey Wolf Optimizer" : 12
+    "Multi-Verse Optimizer" : 4
+    "Simulated Annealing" : 10
 
 ## Applications
 - Residential solar planning
@@ -78,6 +86,6 @@ MATLAB-based optimization framework for residential solar panel configurations u
 - 3D roof modeling integration
 - Real-time weather data
 - Mobile app interface
-- Hybrid algorithms
+- Hybrid algorithms  
 
 *Developed by: Ahmed Mady, Mohammed Magdy, Amro Abdellatif, Mostafa Kashaf, Marwan Sallam t the German University in Cairo (GUC).*
